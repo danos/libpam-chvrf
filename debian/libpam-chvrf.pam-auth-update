@@ -1,0 +1,8 @@
+Name: Change vrf
+Default: yes
+Priority: 0
+
+Session-Type: Additional
+Session-Interactive-Only: yes
+Session:
+	optional			libpam-chvrf.so

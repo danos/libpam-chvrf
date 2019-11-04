@@ -1,0 +1,16 @@
+Source: libpam-chvrf
+Section: contrib/net
+Priority: extra
+Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
+Build-Depends: debhelper (>= 9), bvnos-linux-libc-dev, libpam0g-dev
+Standards-Version: 3.9.8
+
+Package: libpam-chvrf
+Architecture: any
+Priority: extra
+Depends: libpam-runtime, ${misc:Depends}, ${shlibs:Depends}
+Description: Pam module to change the vrf
+ Contains the code to change the vrf of the process which
+ is getting executed. This is a pam module, and should be
+ called from the pam configuration file (by using
+ 'pam-auth-update --package' in postinstall script).
